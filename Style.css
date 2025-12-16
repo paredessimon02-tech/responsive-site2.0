@@ -1,0 +1,75 @@
+.contenedor{
+    justify-content: center;
+    background-color: lightgoldenrodyellow;
+    padding: 20px;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(201, 63, 63, 0.1);
+}
+h1{
+    color: lightblue;
+    justify-content: center;
+    text-align: center;
+}
+.p{
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.mi_navegador{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightpink;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+h2{
+    text-align: center;
+    color:crimson;
+}
+h3{
+    display: flex;
+    justify-content: start;
+    color: crimson;
+}
+.galery{
+    border: 5px solid lightgray;
+    border-radius: 10px;
+    width: 350px;    /* Puedes cambiar el tamaño */
+    height: 280px; 
+    object-fit: cover;
+    justify-content: center;
+    margin: auto;
+}
+.mi_tabla{
+    display: flex;
+    flex-direction: column;
+    justify-content:stretch;
+    color: lightslategrey;
+    gap: 10px;
+}
+@media (min-width: 768px) {
+    .mi_navegador{
+        flex-direction: row;
+    }
+    .galery{
+        width: 300px;    /* Puedes cambiar el tamaño */
+        height: 250px;
+    }
+    .mi_tabla{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+@media(min-width: 1200px){
+    .contenedor{
+        max-width: 1200px;
+    }
+    .galery{
+        width: 350px;    /* Puedes cambiar el tamaño */
+        height: 280px;
+    }
+    .mi_tabla{
+        justify-content: space-between;
+    }
+}
